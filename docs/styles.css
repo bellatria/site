@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+    max-width: 60rem;
+    background-color: #060136;
+    color: #eeeeee;
+}
+
+body > footer, body > header {
+    border-style: dashed;
+    border-color: #c8c5e3;
+}
+
+body > footer {
+    border-width: 1px 0px 0px;
+    font-size: small;
+}
+
+body > header {
+    border-width: 0px 0px 1px;
+}
