@@ -17,11 +17,23 @@ a:hover {
     text-decoration: underline;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0 auto;
-    max-width: 60rem;
-    background-color: #060136;
+    background-color: #060129;
     color: #eeeeee;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
+    max-width: 60rem;
+    margin: 0 auto;
+    flex: 1;
 }
 
 main, body > footer {
@@ -29,6 +41,7 @@ main, body > footer {
 }
 
 main {
+    font-size: 12pt;
     line-height: 1.4rem;
 }
 
@@ -44,7 +57,7 @@ main div.left {
 
 main div.right {
     flex: 2;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 @media screen and (max-width:600px) {
@@ -55,21 +68,25 @@ main div.right {
     }
 }
 
-body > footer, body > header {
+body > header {
     border-style: dashed;
     border-color: #bcb7e8;
 }
 
 body > footer {
-    padding-top: 2rem;
-    border-width: 1px 0px 0px;
+    margin-top: 2rem;
+    padding: 2rem 1.5rem 1rem;
     font-size: small;
     line-height: 1.5em;
+    background-color: #171347;
+}
+
+body > footer p:first-child {
+    margin-top: 0;
 }
 
 body > header {
     border-width: 0px 0px 1px;
-    border-radius: 0 0 1.0rem 1.0rem;
     background-color: #171347;
     margin-bottom: 2.0rem;
 }
@@ -98,7 +115,7 @@ nav a.active, nav a.active:visited {
 
 .title {
     padding: 0.4rem 0 0.8rem 2rem;
-    background-color: #060129;
+    background-color: #060136;
 }
 
 #site-title {
@@ -121,7 +138,18 @@ footer .badge {
 main .side-box {
     font-size: 0.8rem;
     line-height: 1.1rem;
+    text-align: justify;
+    padding: 0.8rem;
+    background-color: #171347;
+    color: #ebeafa;
+}
 
+p:last-child {
+    margin-bottom: 0;
+}
+
+.side-box h2 {
+    border-bottom: 2px solid #241e6f;
 }
 
 h1 {
