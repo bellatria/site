@@ -25,7 +25,7 @@ main p {
 
 body > footer, body > header {
     border-style: dashed;
-    border-color: #c8c5e3;
+    border-color: #bcb7e8;
 }
 
 body > footer {
@@ -37,9 +37,19 @@ body > footer {
 
 body > header {
     border-width: 0px 0px 1px;
+    border-radius: 0 0 1.0rem 1.0rem;
 }
 
 body > header h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+body > header nav {
+    background-color: #171347;
+    border-radius: 0 0 1.0rem 1.0rem;
+}
+
+body > header nav p {
     margin: 0;
 }
 
