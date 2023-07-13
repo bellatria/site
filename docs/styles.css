@@ -86,7 +86,7 @@ body > footer {
     background-color: #171347;
 }
 
-body > footer p:first-child {
+footer p:first-child {
     margin-top: 0;
 }
 
@@ -203,4 +203,30 @@ article footer {
     padding-top: 0.25rem;
     border-top: 1px solid #9997a6;
     font-size: 0.8rem;
+}
+
+/* if it's the main content of the page, directly, then in fact, the size of
+the text shall be larger */
+main > article > footer {
+    font-size: 1.0rem;
+}
+
+article footer h4 {
+    display: inline;
+}
+
+article footer nav {
+    margin-top: 1.0rem;
+}
+
+ul.taglist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+ul.taglist li {
+    display: inline;
+    font-style: italic;
 }
