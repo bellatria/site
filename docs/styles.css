@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 400;
     font-stretch: 100%;
-    src: url('./fonts/opensans-latin.woff2') format('woff2');
+    src: url('/fonts/opensans-latin.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -97,7 +97,22 @@ body > header {
     margin-bottom: 2.0rem;
 }
 
-body > header h1,h2,h3,h4,h5,h6 {
+.nomargin {
+    margin: 0;
+}
+
+code.tag {
+    border-radius: 0.25em;
+    padding: 0.1em 0.25em;
+    background-color: #605d79;
+    font-weight: normal;
+}
+
+a code.tag {
+    color: #f1f1f1;
+}
+
+body > header h1 {
     margin: 0;
 }
 
@@ -133,6 +148,7 @@ nav.site a.active, nav.site a.active:visited {
     font-family: 'Apple Chancery', 'Bradley Hand', cursive;
     font-size: 1.0em;
     padding-top: 0.2rem;
+    margin: 0;
 }
 
 footer .badge {
@@ -159,8 +175,7 @@ p:last-child {
 }
 
 h1 {
-    margin-top: 0;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .tabcontent {
@@ -178,6 +193,7 @@ h1 {
 article header h4 {
     font-size: 0.8rem;
     line-height: 1.0rem;
+    margin: 0;
 }
 
 article header time {
@@ -190,6 +206,7 @@ article header .byline {
 
 article header h1 {
     margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 1.0rem;
     border-bottom: 3px groove #d6d4e7;
 }
@@ -234,24 +251,35 @@ article footer nav {
     margin-top: 1.0rem;
 }
 
-ul.taglist {
+.taglist {
+    margin-top: 0.25em;
+}
+
+.taglist h4 {
+    margin: 0;
+}
+
+.taglist ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: inline;
 }
 
-ul.taglist li {
+.taglist ul li {
     display: inline;
-    font-style: italic;
 }
 
-ul.taglist li::after {
+.taglist ul li::after {
     content: ","
 }
 
-ul.taglist li:last-child::after {
+.taglist ul li:last-child::after {
     content: none;
+}
+
+.tagarchive > li {
+    margin: 0.5em 0;
 }
 
 /* nav classes */
@@ -265,7 +293,7 @@ nav.tabs * {
     display: block;
     color: #eae9f7;
     border-color: #453f74;
-    border-width: 2px;
+    border-width: 1px;
     border-bottom-style: solid;
 }
 
@@ -279,18 +307,14 @@ nav.tabs a {
 
 nav.tabs a:hover {
     background-color: #453f74;
+    text-decoration: none;
 }
 
 nav.tabs .last {
-    border-right-width: 2px;
-}
-
-nav.tabs *:first-child {
-    border-left-width: 2px;
+    border-right-width: 1px;
 }
 
 nav.tabs .active {
-    text-decoration: underline;
     border-bottom-style: none;
     background-color: #453f74;
 }
