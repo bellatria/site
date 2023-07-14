@@ -48,25 +48,26 @@ main, body > footer {
 main {
     font-size: 12pt;
     line-height: 1.4rem;
+    width: 100%;
 }
 
-main {
+main.multicolumn {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-main .left {
+main.multicolumn .left {
     flex: 3;
 }
 
-main .right {
+main.multicolumn .right {
     flex: 2;
     padding-left: 2rem;
 }
 
 @media screen and (max-width:600px) {
-    main .left, main .right {
+    main.multicolumn .left, main.multicolumn .right {
         flex: none;
         width: 100%;
         padding-left: 0;
