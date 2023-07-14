@@ -5,7 +5,7 @@ This is the headmate party website source code. It is a mainly static site that 
 
 If you are a member of Bellatrix Hadar (The ThickAether system) and are seeking
 instructions on how to publish a post, first try asking internally. Bella,
-Kanica, and Vrantis are the ones most likely to know. If they do not, are
-unavailble, or you *are* one of those listed and have lost access to the
+Kanica, and Vantar are the ones most likely to know. If they do not, are
+unavailable, or you *are* one of those listed and have lost access to the
 relevant information, see the [PROCEDURES.md](./PROCEDURES.md) file for
 instructions.
