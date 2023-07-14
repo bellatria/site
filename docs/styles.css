@@ -192,6 +192,7 @@ h1 {
 
 article.preview {
     margin-bottom: 2.0em;
+    text-align: justify;
 }
 
 article header h4 {
