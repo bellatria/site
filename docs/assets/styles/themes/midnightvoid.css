@@ -7,13 +7,23 @@ the Midnight Void theme.
 When we have multiple: this should make it so users can switch between: https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page
 */
 
-body {
+body,
+a code.tag {
     color: #f1f1f1;
+}
+
+body {
     background-color: #060129;
 }
 
 body > header {
     border-color: #bcb7e8;
+}
+
+body > header,
+body > footer,
+main .side-box,
+.aside {
     background-color: #171347;
 }
 
@@ -21,12 +31,7 @@ body > header {
     background-color: #060136;
 }
 
-body > footer {
-    background-color: #171347;
-}
-
 main .side-box {
-    background-color: #171347;
     color: #ebeafa;
 }
 
@@ -38,16 +43,8 @@ a:visited, a {
     color: #beb8f5;
 }
 
-nav.site a, nav.site a:visited {
-    color: #eae9f7;
-}
-
 code.tag {
     background-color: #605d79;
-}
-
-a code.tag {
-    color: #f1f1f1;
 }
 
 article header h1 {
@@ -58,23 +55,21 @@ article footer {
     border-top-color: #9997a6;
 }
 
+nav.site a,
+nav.site a:visited,
 nav.tabs * {
     color: #eae9f7;
-    border-color: #453f74;
 }
 
 nav.tabs a {
     background-color: #1a144e;
 }
 
-nav.tabs a:hover {
-    background-color: #453f74;
-}
-
+nav.tabs a:hover,
 nav.tabs .active {
     background-color: #453f74;
 }
 
-.aside {
-    background-color: #171347;
+nav.tabs * {
+    border-color: #453f74;
 }
