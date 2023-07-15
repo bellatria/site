@@ -10,7 +10,6 @@
 
 a:visited, a {
     text-decoration: none;
-    color: #beb8f5;
 }
 
 a:hover {
@@ -23,8 +22,6 @@ html {
 
 body {
     margin: 0 auto;
-    background-color: #060129;
-    color: #f1f1f1;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -69,17 +66,11 @@ main.multicolumn .right {
     }
 }
 
-body > header {
-    border-style: dashed;
-    border-color: #bcb7e8;
-}
-
 body > footer {
     margin-top: 2rem;
     padding: 2rem 1.5rem 1rem;
     font-size: small;
     line-height: 1.5em;
-    background-color: #171347;
 }
 
 footer p:first-child {
@@ -87,8 +78,8 @@ footer p:first-child {
 }
 
 body > header {
+    border-style: dashed;
     border-width: 0px 0px 1px;
-    background-color: #171347;
     margin-bottom: 2.0rem;
 }
 
@@ -99,12 +90,7 @@ body > header {
 code.tag {
     border-radius: 0.25em;
     padding: 0.1em 0.25em;
-    background-color: #605d79;
     font-weight: normal;
-}
-
-a code.tag {
-    color: #f1f1f1;
 }
 
 body > header h1 {
@@ -121,17 +107,12 @@ body > header nav.site p {
     margin: 0;
 }
 
-nav.site a, nav.site a:visited {
-    color: #eae9f7;
-}
-
 nav.site a.active, nav.site a.active:visited {
     text-decoration: underline;
 }
 
 .title {
     padding: 0.4rem 0 0.8rem 2rem;
-    background-color: #060136;
 }
 
 #site-title {
@@ -157,8 +138,6 @@ main .side-box {
     line-height: 1.1rem;
     text-align: justify;
     padding: 0.8rem;
-    background-color: #171347;
-    color: #ebeafa;
 }
 
 p:last-child {
@@ -166,7 +145,8 @@ p:last-child {
 }
 
 .side-box h2 {
-    border-bottom: 2px solid #241e6f;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }
 
 h1 {
@@ -208,7 +188,8 @@ article header h1 {
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 1.0rem;
-    border-bottom: 3px groove #d6d4e7;
+    border-bottom-width: 3px;
+    border-bottom-style: groove;
 }
 
 article header .pubdetails {
@@ -233,7 +214,8 @@ article .signing {
 article footer {
     margin-top: 1rem;
     padding-top: 0.25rem;
-    border-top: 1px solid #9997a6;
+    border-top-width: 1px;
+    border-top-style: solid;
     font-size: 0.8rem;
 }
 
@@ -291,8 +273,6 @@ nav.tabs {
 
 nav.tabs * {
     display: block;
-    color: #eae9f7;
-    border-color: #453f74;
     border-width: 1px;
     border-bottom-style: solid;
 }
@@ -300,13 +280,11 @@ nav.tabs * {
 nav.tabs a {
     font-weight: bold;
     padding: 0.3rem 0.6rem;
-    background-color: #1a144e;
     border-style: solid;
     border-radius: 10px 10px 0px 0px;
 }
 
 nav.tabs a:hover {
-    background-color: #453f74;
     text-decoration: none;
 }
 
@@ -316,7 +294,6 @@ nav.tabs .last {
 
 nav.tabs .active {
     border-bottom-style: none;
-    background-color: #453f74;
 }
 
 /* aside dialog styles */
@@ -329,7 +306,6 @@ nav.tabs .active {
     border-radius: 0.5em;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8em;
-    background-color: #171347;
     width: 30rem;
     padding: 0.5em;
     margin: 0.5em;
